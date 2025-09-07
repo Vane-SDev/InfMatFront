@@ -70,17 +70,102 @@ const Hero = () => {
                 
                 <div className="hero-visual animate-fade-in-right">
                     <div className="math-visualization">
+                        {/* Integral definida */}
                         <div className="equation equation-1 animate-float">
-                            <span>∫</span>
-                            <span>f(x)dx</span>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <span className="integral-symbol">∫</span>
+                                    <div className="integral-limits">
+                                        <span className="limit-top">b</span>
+                                        <span className="limit-bottom">a</span>
+                                    </div>
+                                    <span className="function">f(x)dx</span>
+                                </div>
+                                <div className="equation-label">Integral definida</div>
+                            </div>
                         </div>
-                        <div className="equation equation-2 animate-float" style={{animationDelay: '0.5s'}}>
-                            <span>lim</span>
-                            <span>x→∞</span>
+
+                        {/* Límite al infinito */}
+                        <div className="equation equation-2 animate-float" style={{ animationDelay: '0.5s' }}>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <div className="limit-expression">
+                                        <span className="limit-text">lim</span>
+                                        <span className="limit-variable">x→∞</span>
+                                    </div>
+                                    <span className="function">f(x)</span>
+                                </div>
+                                <div className="equation-label">Límite infinito</div>
+                            </div>
                         </div>
-                        <div className="equation equation-3 animate-float" style={{animationDelay: '1s'}}>
-                            <span>∑</span>
-                            <span>n=1</span>
+
+                        {/* Serie infinita */}
+                        <div className="equation equation-3 animate-float" style={{ animationDelay: '1s' }}>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <div className="summation">
+                                        <span className="sum-top">∞</span>
+                                        <span className="sum-symbol">∑</span>
+                                        <span className="sum-bottom">n=1</span>
+                                    </div>
+                                    <div className="fraction">
+                                        <span className="numerator">1</span>
+                                        <span className="fraction-line"></span>
+                                        <span className="denominator">n²</span>
+                                    </div>
+                                </div>
+                                <div className="equation-label">Serie armónica</div>
+                            </div>
+                        </div>
+
+                        {/* Identidad de Euler */}
+                        <div className="equation equation-4 animate-float" style={{ animationDelay: '1.5s' }}>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <span className="euler-e">e</span>
+                                    <sup className="euler-exp">iπ</sup>
+                                    <span className="euler-plus"> + 1 = 0</span>
+                                </div>
+                                <div className="equation-label">Identidad de Euler</div>
+                            </div>
+                        </div>
+
+                        {/* Derivada */}
+                        <div className="equation equation-5 animate-float" style={{ animationDelay: '2s' }}>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <div className="derivative">
+                                        <span className="d-top">d</span>
+                                        <span className="fraction-line"></span>
+                                        <span className="d-bottom">dx</span>
+                                    </div>
+                                    <span className="function">[f(x)] = f'(x)</span>
+                                </div>
+                                <div className="equation-label">Derivada</div>
+                            </div>
+                        </div>
+
+                        {/* Matriz 2x2 */}
+                        <div className="equation equation-6 animate-float" style={{ animationDelay: '2.5s' }}>
+                            <div className="equation-content">
+                                <div className="math-formula">
+                                    <div className="matrix">
+                                        <span className="matrix-bracket left">[</span>
+                                        <div className="matrix-content">
+                                            <div className="matrix-row">
+                                                <span className="matrix-element">a</span>
+                                                <span className="matrix-element">b</span>
+                                            </div>
+                                            <div className="matrix-row">
+                                                <span className="matrix-element">c</span>
+                                                <span className="matrix-element">d</span>
+                                            </div>
+                                        </div>
+                                        <span className="matrix-bracket right">]</span>
+                                    </div>
+                                </div>
+                                <div className="equation-label">Matriz 2×2</div>
+                            </div>
                         </div>
                     </div>
                 </div>
